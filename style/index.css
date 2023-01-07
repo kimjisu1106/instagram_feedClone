@@ -15,12 +15,32 @@
 }
 
 .header__tools {
+  display: flex;
+  justify-content: space-between;
   margin: var(--margin);
   font-size: 1.6em;
 }
 
 .header__tools i {
   margin: 0px 0.5em;
+}
+
+.header__tool {
+  position: relative;
+}
+
+.header .alert {
+  width: 8px;
+  height: 8px;
+  top: 0px;
+  right: 12px;
+}
+
+.header .alert__num {
+  width: 18px;
+  height: 18px;
+  top: -8px;
+  right: 5px;
 }
 
 /* Story Tray */

@@ -1,6 +1,10 @@
 :root {
-  --margin: 10px;
+  --margin: 0.5em;
   --gray: rgba(0, 0, 0, 0.3);
   --blue: #0a98f6;
   --red: #ff3141;
+  --gray-bar: rgba(0, 0, 0, 0.1);
+  --black-font500: #373737;
+  --black-font600: #060606;
+  --gray-font: #7f7f7f;
 }

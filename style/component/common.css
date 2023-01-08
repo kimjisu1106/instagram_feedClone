@@ -2,13 +2,18 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   overflow-x: hidden;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
   font-size: 10px;
+}
+
+span,
+p {
+  color: var(--black-font500);
 }
 
 ::-webkit-scrollbar {
@@ -33,4 +38,55 @@ body {
   font-size: 0.55em;
   padding-top: 6%;
   box-sizing: border-box;
+}
+
+.user-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.user-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.user-photo__img {
+  border: 3px solid white;
+  border-radius: 50%;
+  background-color: white;
+  object-fit: cover;
+}
+
+.username {
+  margin: 0.5em;
+}
+
+.newStory {
+  background: linear-gradient(
+    45deg,
+    rgba(252, 189, 78, 1) 10%,
+    rgba(255, 49, 75, 1) 55%,
+    rgba(211, 5, 199, 1) 100%
+  );
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100vw;
+  }
+}
+
+@media screen and (width>500px) {
+  .container {
+    width: 500px;
+    margin: 1em 0em;
+    border: 1px solid gray;
+    border-radius: 20px;
+  }
 }
